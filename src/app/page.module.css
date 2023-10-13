@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.table {
+  min-width: 600px; 
+}
+
+.tableContainer {
+  margin: 2rem;
+  overflow-x: auto;
+}
+
+.tableHead {
+  background-color: #edf2f7;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tableHeaderText {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a202c;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+
+.rows {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+
+.rows:hover {
+  background-color: #f7fafc;
+}
+
+.button {
+  height: 3rem;
+  width: 5rem;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffffff;
+  border: none;
+  border: 1px solid #eee;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #eee;
+}
+
+.button:disabled {
+  color: #b9b9b9;
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+      min-width: unset;  /* Optional: Remove the min-width set above on mobile */
+  }
+}
